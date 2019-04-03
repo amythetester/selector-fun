@@ -2,60 +2,107 @@
 
 
 /* Give the header element a background color */
-
+header {
+    background-color: aquamarine;
+}
 
 /* Center everything in the header and footer */
+header {
+    text-align: center;
+}
 
+footer {
+    text-align: center;
+}
 
 /* All text to Helvetica */
-
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
 
 /* All links default color is gray*/
-
+a:link {
+   color: gray; 
+}
 
 /* All links on hover color red*/
-
+a:hover {
+    color: red;
+}
 
 /* All Links visted color black*/
-
+a:visited {
+    color: black;
+}
 
 /* Footer disclaimer text to be .5 em*/
-
+footer p {
+    font-size: .5em;
+}
 
 /* Remove bullet points from header navigation links */
-
+header ul {
+    list-style-type: none;
+}
 
 /* All Post's Comment Links Italicized, Orange and Remove the Underline */
-
+a[href="#comments"] {
+    font-style: italic;
+    color: orange;
+    text-decoration-line: none;
+}
 
 /* All Post's Comment Links Show Underline on Hover */
-
+a[href="#comments"]:hover {
+    text-decoration-line: underline;
+}
 
 /* All Post's Author's Links Bold and Blue, with no Underline */
-
+main a:not([href="#comments"]) {
+    color: blue;
+    font-style: bold;
+}
 
 /* Article Paragraph Text should have line height of 200% */
-
+p {
+    line-height: 200%;
+}
 
 /* The First Letter of each Article be 2em */
-
+.post-content p::first-letter {
+    font-size: 2em;
+}
 
 /* The First Image in every Article should have Rounded Corners*/
-
+section img:first-child {
+    border-radius: 25px;
+}
 
 /* The First Top Cat Section (check the bottom of the HTML file) should have a Golden Background */
-
+#top-cats section:first-of-type {
+    background-color: gold;
+}
 
 /* The 2nd Top Cat Section Should have a Silver/gray Background */
+#top-cats section:nth-of-type(2) {
+    background-color: silver;
+}
 
 /* The 3rd-Most Top Cat Should have a Bronze/brown Background
    Note: the HTML for this one is a little odd! This is intentional! */
+section {
+    background-color: brown;
+}
 
 /* Every other Article's Post-Content Background Color to a Light Grey */
-
+.post-content {
+    background-color: lightgrey;
+}
 
 /* All Top Kitten's Profile Photos Rounded */
-
+#top-cats img {
+    border-radius: 25px;
+}
 
 /*** BONUS ***/
 
